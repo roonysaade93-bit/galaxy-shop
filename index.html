@@ -149,7 +149,7 @@
         /* IMAGE HANDLING */
         .product-image-container {
             width: 100%;
-            height: 400px; /* גובה קבוע, משמר יחס גובה-רוחב טוב לתמונה */
+            height: 400px; 
             overflow: hidden;
             border-radius: 15px;
             margin-bottom: 20px;
@@ -493,7 +493,7 @@
             </div>
 
             <p style="margin-top: 25px; font-size: 1.1em;">
-                📞 טלפון: 050-XXX-XXXX<br>
+                📞 טלפון: 052-523-4844<br>
                 📧 אימייל: info@flexher.co.il
             </p>
         </div>
@@ -502,21 +502,23 @@
     <div class="floating-whatsapp" onclick="openWhatsApp()">💬</div>
 
     <script>
+        // מספר הטלפון שלך בוואטסאפ (972 ללא 0 ראשון)
+        const WA_PHONE = '972525234844'; 
+        // מספר הטלפון לחיוג ישיר
+        const CALL_PHONE = '+972525234844'; 
+
         function orderProduct(productName) {
             const message = `היי FlexHer! אני מעוניינת להזמין את ${productName}. אשמח לקבל פרטים נוספים על איך לבצע את ההזמנה.`;
-            // החלף את המספר הזה למספר שלך (לדוגמה 972501234567)
-            window.open(`https://wa.me/972501234567?text=${encodeURIComponent(message)}`, '_blank');
+            window.open(`https://wa.me/${WA_PHONE}?text=${encodeURIComponent(message)}`, '_blank');
         }
 
         function openWhatsApp() {
             const message = 'היי FlexHer! אני מעוניינת לקבל מידע נוסף על הטייץ שלכן.';
-            // החלף את המספר הזה למספר שלך
-            window.open(`https://wa.me/972501234567?text=${encodeURIComponent(message)}`, '_blank');
+            window.open(`https://wa.me/${WA_PHONE}?text=${encodeURIComponent(message)}`, '_blank');
         }
 
         function callUs() {
-            // החלף למספר שלך
-            window.location.href = 'tel:+972501234567';
+            window.location.href = `tel:${CALL_PHONE}`;
         }
     </script>
 </body>
