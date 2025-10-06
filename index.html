@@ -173,27 +173,6 @@
             margin-bottom: 15px;
         }
 
-        .product-specs {
-            font-size: 0.95em;
-            color: rgba(255, 255, 255, 0.9);
-            margin: 15px 0;
-            line-height: 1.8;
-        }
-
-        .price {
-            font-size: 2em;
-            font-weight: bold;
-            color: #4facfe;
-            margin: 15px 0;
-        }
-
-        .old-price {
-            text-decoration: line-through;
-            color: #888;
-            font-size: 0.8em;
-            margin-left: 10px;
-        }
-
         /* BUY BUTTON */
         /* כפתורי הקנייה מכוונים עכשיו לשופיפיי */
         .buy-button {
@@ -221,6 +200,49 @@
             margin: 60px 0 35px;
             text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
         }
+        
+        /* New styling for marketing description box */
+        .marketing-description-box {
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            text-align: right; /* יישור לימין */
+        }
+        .marketing-description-box h3 {
+            color: #764ba2;
+            font-size: 1.6em;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #f093fb;
+            padding-bottom: 5px;
+        }
+        .marketing-description-box p, .marketing-description-box ul {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        .marketing-description-box ul {
+            list-style-type: none; /* מסיר את הבולטים הרגילים */
+            padding-right: 0;
+        }
+        .marketing-description-box ul li {
+            position: relative;
+            padding-right: 20px;
+            margin-bottom: 8px;
+        }
+        .marketing-description-box ul li::before {
+            content: '•';
+            color: #f5576c;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-right: -1em;
+            position: absolute;
+            right: 0;
+        }
+
 
         .about-brand {
             background: rgba(255, 255, 255, 0.1);
@@ -380,7 +402,9 @@
             <div class="new-brand-badge">מותג חדש בישראל</div>
             <h1>הסוף למבוכה: הטייץ הלא-שקוף שמעניק לך ביטחון מלא!</h1>
             <p style="font-size: 1.3em; margin: 20px 0;">בד 'סקואט פרוף' (Squat Proof) | מותניים גבוהות לתמיכה | תחושת "עירום" (Naked Feel)</p>
-            <a href="https://v5fmocr4mmr5a0so-95659426095.shopifypreview.com/products_preview?preview_key=87f68de85a070ff7cea09d79e01cabd5" class="cta-button">כן! אני רוצה ביטחון ונוחות באימון</a>
+            <a href="https://yccjiq-wj.myshopify.com/products/flexher-premium-leggings" class="cta-button">
+                כן! אני רוצה ביטחון ונוחות באימון
+            </a>
         </div>
 
         <h2 class="section-title">מבצעי השקה מיוחדים בשבילך!</h2>
@@ -412,27 +436,47 @@
                     <img src="https://ae01.alicdn.com/kf/S5589ea3c1e1f43ee8e05e1019aff6f36H.jpg?width=1067&height=1600&hash=2667" alt="טייץ יוגה אדום מותניים גבוהות FlexHer">
                 </div>
                 <h3>טייץ יוגה פרימיום - FlexHer</h3>
-                <p>הטייץ שישנה לך את חווית האימון! עיצוב מושלם, נוחות מקסימלית ותחושה קלילה כמו נוצה (<strong style="color: #4facfe;">Naked Feel</strong>). ביטחון בלתי מתפשר.</p>
-                
-                <div class="product-specs">
-                    <strong>למה תתאהבי בטייץ של FlexHer?</strong><br>
-                    •   **בד "תחושת עירום" (Naked Feel):** קל משקל, נושם ורך במיוחד.<br>
-                    •   **בד לא שקוף לחלוטין (Squat Proof):** עכשיו את יכולה להתאמן בראש שקט.<br>
-                    •   **מותניים גבוהות ומחמיאות:** תמיכה מושלמת ואפקט חיטוב טבעי.<br>
-                    •   **טכנולוגיית ייבוש מהיר:** נשארת יבשה ורעננה, גם באימונים אינטנסיביים.<br>
-                    •   **בד גמיש ונושם:** 80% פוליאסטר + 20% ספנדקס לנוחות מקסימלית.<br>
-                    •   **מידות:** S-XL
-                </div>
-
                 <div class="price">
                     ₪149
                     <span class="old-price">₪199</span>
                 </div>
-                <button class="buy-button" onclick="window.location.href='https://v5fmocr4mmr5a0so-95659426095.shopifypreview.com/products_preview?preview_key=87f68de85a070ff7cea09d79e01cabd5'">
+                <button class="buy-button" onclick="window.location.href='https://yccjiq-wj.myshopify.com/products/flexher-premium-leggings'">
                     אני רוצה להזמין את הטייץ שלי!
                 </button>
             </div>
         </div>
+        
+        <div class="marketing-description-box">
+            <h3>תיאור מוצר: FlexHer - טייץ יוגה פרימיום</h3>
+            <p>הטייץ שישנה לך את חווית האימון! עיצוב מושלם, נוחות מקסימלית ותחושה קלילה כמו נוצה (<strong>Naked Feel</strong>). ביטחון בלתי מתפשר.</p>
+            
+            <h3>למה תתאהבי בטייץ של FlexHer?</h3>
+            <ul>
+                <li>
+                    <strong>בד "תחושת עירום" (Naked Feel):</strong> קל משקל, נושם ורך במיוחד.
+                </li>
+                <li>
+                    <strong>בד לא שקוף לחלוטין (Squat Proof):</strong> עכשיו את יכולה להתאמן בראש שקט.
+                </li>
+                <li>
+                    <strong>מותניים גבוהות ומחמיאות:</strong> תמיכה מושלמת ואפקט חיטוב טבעי.
+                </li>
+                <li>
+                    <strong>טכנולוגיית ייבוש מהיר:</strong> נשארת יבשה ורעננה, גם באימונים אינטנסיביים.
+                </li>
+                <li>
+                    <strong>בד גמיש ונושם:</strong> 80% פוליאסטר + 20% ספנדקס לנוחות מקסימלית.
+                </li>
+                <li>
+                    <strong>מידות:</strong> S-XL
+                </li>
+            </ul>
+            
+            <p style="color: #f5576c; font-weight: bold; margin-top: 25px;">
+                <strong>שימי לב:</strong> אנו מבצעים משלוחים ישירות מהספק בחו"ל. זמן האספקה המשוער הוא 14-25 ימי עסקים.
+            </p>
+        </div>
+
 
         <div class="social-proof">
             <h2 class="section-title">מה הלקוחות שלנו אומרות?</h2>
@@ -512,16 +556,9 @@
         const CALL_PHONE = '+972525234844'; 
         
         // **קישור הרכישה החדש לשופיפיי**
-        const SHOPIFY_PRODUCT_URL = 'https://v5fmocr4mmr5a0so-95659426095.shopifypreview.com/products_preview?preview_key=87f68de85a070ff7cea09d79e01cabd5';
-
-        // הפונקציה orderProduct הוחלפה בקישור ישיר ב-HTML, לכן הפונקציה הזו לא בשימוש כעת.
-        // הקוד הישן נשאר למטה אבל אינו בשימוש:
-        /*
-        function orderProduct(productName) {
-            const message = `היי FlexHer! אני מעוניינת להזמין את המוצר: ${productName}. אנא עזרו לי לבצע את ההזמנה.`;
-            window.open(`https://wa.me/${WA_PHONE}?text=${encodeURIComponent(message)}`, '_blank');
-        }
-        */
+        // הקישור הזה הוא דוגמה כללית. אתה צריך להחליף אותו בקישור הקבוע של המוצר שלך:
+        // מצא את הקישור שלך תחת Search engine listing preview בעמוד המוצר בשופיפיי.
+        const SHOPIFY_PRODUCT_URL = 'https://yccjiq-wj.myshopify.com/products/flexher-premium-leggings';
 
         function openWhatsApp() {
             const message = 'היי FlexHer! אני מעוניינת לקבל מידע נוסף על הטייץ שלכן.';
