@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlexHer - ביגוד ספורט פרימיום לנשים | טייץ, גרביים ובגדי יוגה</title>
-    <meta name="description" content="ביגוד ספורט איכותי לנשים. טייץ, גרביים ובגדי יוגה עם מיתוג אישי. הנחות לחיילות ולקוחות מפנות. משלוח חינם בישראל.">
+    <title>FlexHer - ביגוד ספורט פרימיום לנשים | טייץ יוגה איכותי</title>
+    <meta name="description" content="ביגוד ספורט איכותי לנשים. טייץ יוגה עם מותניים גבוהות, בד לא שקוף. הנחה מיוחדת לחיילות. משלוח חינם בישראל.">
     <style>
         * {
             margin: 0;
@@ -25,12 +25,6 @@
             text-align: center;
             font-weight: bold;
             font-size: 0.95em;
-            animation: slideDown 0.5s ease-out;
-        }
-
-        @keyframes slideDown {
-            from { transform: translateY(-100%); }
-            to { transform: translateY(0); }
         }
 
         .container {
@@ -73,11 +67,6 @@
         .hero h1 {
             font-size: 2.5em;
             margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 1.3em;
-            margin-bottom: 30px;
         }
 
         .discount-boxes {
@@ -135,13 +124,23 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 4em;
+            font-size: 2em;
             margin-bottom: 20px;
+            color: white;
+            text-align: center;
+            padding: 20px;
         }
 
         .product-card h3 {
             font-size: 1.6em;
             margin-bottom: 15px;
+        }
+
+        .product-specs {
+            font-size: 0.95em;
+            color: rgba(255, 255, 255, 0.9);
+            margin: 15px 0;
+            line-height: 1.8;
         }
 
         .price {
@@ -176,37 +175,23 @@
             box-shadow: 0 10px 25px rgba(102, 126, 234, 0.5);
         }
 
-        .reviews {
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin: 60px 0 35px;
+        }
+
+        .about-brand {
             background: rgba(255, 255, 255, 0.1);
             border-radius: 25px;
             padding: 40px 30px;
             margin: 40px 0;
         }
 
-        .section-title {
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 35px;
-        }
-
-        .review-card {
-            background: rgba(255, 255, 255, 0.15);
-            border-radius: 15px;
-            padding: 25px;
+        .about-brand p {
+            font-size: 1.2em;
+            line-height: 1.8;
             margin: 20px 0;
-            border-right: 4px solid #f093fb;
-        }
-
-        .stars {
-            color: #ffd700;
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-
-        .reviewer-name {
-            font-weight: bold;
-            color: #4facfe;
-            margin-bottom: 10px;
         }
 
         .features {
@@ -259,11 +244,6 @@
             color: white;
         }
 
-        .telegram-btn {
-            background: #0088cc;
-            color: white;
-        }
-
         .phone-btn {
             background: #667eea;
             color: white;
@@ -296,6 +276,15 @@
             transform: scale(1.1);
         }
 
+        .new-brand-badge {
+            display: inline-block;
+            background: #f5576c;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+
         @media (max-width: 768px) {
             .logo {
                 font-size: 2em;
@@ -313,109 +302,95 @@
 </head>
 <body>
     <div class="top-banner">
-        🔥 מבצע השקה! הנחה של 20% על כל המוצרים + משלוח חינם | חיילות חרבות ברזל - 25% הנחה!
+        מבצע השקה! משלוח חינם לכל הארץ | חיילות חרבות ברזל - הנחה מיוחדת!
     </div>
 
     <div class="container">
         <header>
-            <div class="logo">💪 FlexHer</div>
-            <div class="tagline">ביגוד ספורט פרימיום לנשים הישראליות החזקות</div>
+            <div class="logo">FlexHer</div>
+            <div class="tagline">ביגוד ספורט פרימיום לנשים הישראליות</div>
         </header>
 
         <div class="hero">
-            <h1>בגדי ספורט שמעצימים אותך</h1>
-            <p>טייץ, גרביים ובגדי יוגה איכותיים עם מיתוג אישי</p>
-            <p>תוצרת ישראל | איכות פרימיום | משלוח מהיר</p>
+            <div class="new-brand-badge">מותג חדש בישראל</div>
+            <h1>טייץ יוגה איכותי שמעצים אותך</h1>
+            <p style="font-size: 1.3em; margin: 20px 0;">בד לא שקוף | מותניים גבוהות | ייבוש מהיר</p>
         </div>
 
         <div class="discount-boxes">
             <div class="discount-box">
-                <h3>🎖️ חיילות חרבות ברזל</h3>
+                <h3>חיילות חרבות ברזל</h3>
                 <div class="percentage">25%</div>
-                <p>הנחה מיוחדת לוחמות שלנו</p>
-                <p style="font-size: 0.9em;">יש להציג תעודה צבאית בתהליך ההזמנה</p>
+                <p>הנחה מיוחדת ללוחמות שלנו</p>
+                <p style="font-size: 0.9em;">צרי קשר בוואטסאפ ונאשר את ההנחה</p>
             </div>
 
             <div class="discount-box">
-                <h3>👥 הפני חברה</h3>
+                <h3>הפני חברה</h3>
                 <div class="percentage">5%</div>
                 <p>הנחה נוספת לך ולחברה שלך</p>
-                <p style="font-size: 0.9em;">ההנחה תינתן לשתיכן!</p>
             </div>
 
             <div class="discount-box">
-                <h3>🎁 לקוחה חוזרת</h3>
+                <h3>לקוחה חוזרת</h3>
                 <div class="percentage">10%</div>
                 <p>הנחה על הקנייה השנייה</p>
-                <p style="font-size: 0.9em;">הצטרפי למועדון הלקוחות</p>
             </div>
         </div>
 
-        <h2 class="section-title">המוצרים שלנו</h2>
+        <h2 class="section-title">המוצר שלנו</h2>
         <div class="products">
             <div class="product-card">
-                <div class="product-image">🧘‍♀️</div>
-                <h3>טייץ יוגה פרימיום</h3>
-                <p>בד נושם ומתיחה מושלמת, מושלם ליוגה, פילאטיס וריצה</p>
+                <div class="product-image">
+                    הכניסי תמונת מוצר כאן<br>
+                    (החליפי דיב זה בתג img)
+                </div>
+                <h3>טייץ יוגה פרימיום - FlexHer</h3>
+                <p>טייץ ספורט איכותי עם מותניים גבוהות, מושלם ליוגה, פילאטיס, ריצה וחדר כושר</p>
+                
+                <div class="product-specs">
+                    <strong>מפרט:</strong><br>
+                    • בד לא שקוף (Squat proof)<br>
+                    • מותניים גבוהות לתמיכה<br>
+                    • טכנולוגיית ייבוש מהיר<br>
+                    • 80% פוליאסטר + 20% ספנדקס<br>
+                    • זמין ב-5 צבעים<br>
+                    • מידות: S-XL
+                </div>
+
                 <div class="price">
                     ₪149
                     <span class="old-price">₪199</span>
                 </div>
-                <button class="buy-button" onclick="orderProduct('טייץ יוגה')">🛒 הזמיני עכשיו</button>
+                <button class="buy-button" onclick="orderProduct('טייץ יוגה פרימיום')">הזמיני עכשיו</button>
             </div>
+        </div>
 
-            <div class="product-card">
-                <div class="product-image">🧦</div>
-                <h3>גרביים דחוסות ספורט</h3>
-                <p>תמיכה לשוקיים, מונעות עייפות ומשפרות ביצועים</p>
-                <div class="price">
-                    ₪79
-                    <span class="old-price">₪119</span>
-                </div>
-                <button class="buy-button" onclick="orderProduct('גרביים דחוסות')">🛒 הזמיני עכשיו</button>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">👕</div>
-                <h3>חולצת ספורט נושמת</h3>
-                <p>בד ייבוש מהיר, קלילה ונוחה לכל פעילות ספורטיבית</p>
-                <div class="price">
-                    ₪99
-                    <span class="old-price">₪139</span>
-                </div>
-                <button class="buy-button" onclick="orderProduct('חולצת ספורט')">🛒 הזמיני עכשיו</button>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">🩱</div>
-                <h3>סט יוגה מלא</h3>
-                <p>טייץ + חולצה + גרביים במחיר מיוחד</p>
-                <div class="price">
-                    ₪279
-                    <span class="old-price">₪399</span>
-                </div>
-                <button class="buy-button" onclick="orderProduct('סט יוגה מלא')">🛒 הזמיני עכשיו</button>
-            </div>
+        <div class="about-brand">
+            <h2 class="section-title">הסיפור שלנו</h2>
+            <p>
+                FlexHer נוסדה מתוך אהבה לספורט ורצון לספק לנשים ישראליות ביגוד איכותי במחיר הוגן.
+            </p>
+            <p>
+                אנחנו מותג חדש, וזו ההזדמנות שלך להיות בין הלקוחות הראשונות שלנו ולעזור לנו לבנות את הקהילה.
+            </p>
+            <p>
+                <strong>מחויבות מיוחדת לחיילות:</strong> אנחנו מעריכים את השירות והמסירות של לוחמות חרבות ברזל, ולכן מציעים הנחה מיוחדת. צרי קשר בוואטסאפ ונאשר את ההנחה שלך.
+            </p>
         </div>
 
         <h2 class="section-title">למה לבחור ב-FlexHer?</h2>
         <div class="features">
             <div class="feature-item">
-                <div class="feature-icon">🇮🇱</div>
-                <h3>תוצרת ישראל</h3>
-                <p>מיוצר בישראל באיכות הגבוהה ביותר</p>
-            </div>
-
-            <div class="feature-item">
                 <div class="feature-icon">✨</div>
-                <h3>מיתוג אישי</h3>
-                <p>אפשרות למיתוג אישי על כל מוצר</p>
+                <h3>איכות מובטחת</h3>
+                <p>בד איכותי, לא שקוף, עמיד לאורך זמן</p>
             </div>
 
             <div class="feature-item">
                 <div class="feature-icon">🚚</div>
-                <h3>משלוח מהיר</h3>
-                <p>משלוח חינם בכל הארץ תוך 2-4 ימים</p>
+                <h3>משלוח חינם</h3>
+                <p>משלוח מהיר לכל הארץ ללא עלות</p>
             </div>
 
             <div class="feature-item">
@@ -423,108 +398,53 @@
                 <h3>החזר כספי</h3>
                 <p>30 יום להחזרה ללא שאלות</p>
             </div>
-        </div>
 
-        <div class="reviews">
-            <h2 class="section-title">מה הלקוחות שלנו אומרות</h2>
-            <p style="text-align: center; font-size: 1.2em; margin-bottom: 30px;">
-                דירוג ממוצע: ⭐⭐⭐⭐⭐ 4.9/5 (מעל 500 ביקורות)
-            </p>
-
-            <div class="review-card">
-                <div class="stars">★★★★★</div>
-                <div class="reviewer-name">נועה ל., תל אביב</div>
-                <p>"הטייץ הכי נוח שיש לי! משתמשת בו כל יום ביוגה. האיכות מדהימה והוא לא שקוף בכלל. כחיילת בשירות פעיל, ההנחה שקיבלתי הייתה מדהימה. ממליצה בחום!"</p>
-            </div>
-
-            <div class="review-card">
-                <div class="stars">★★★★★</div>
-                <div class="reviewer-name">שירה מ., ירושלים</div>
-                <p>"קניתי את הגרביים הדחוסות והן פשוט משנות חיים! אחרי ריצות ארוכות אין לי כאבים ברגליים. גם הפנייתי את חברה שלי וקיבלנו שתינו הנחה. שירות לקוחות מעולה!"</p>
-            </div>
-
-            <div class="review-card">
-                <div class="stars">★★★★★</div>
-                <div class="reviewer-name">מיכל כ., חיפה</div>
-                <p>"שירתתי במלחמת חרבות ברזל וההנחה למשרתות הייתה מחווה מדהימה. המוצרים באיכות פרימיום והמיתוג האישי שעשו לי על הטייץ פשוט מושלם. תודה רבה!"</p>
-            </div>
-
-            <div class="review-card">
-                <div class="stars">★★★★★</div>
-                <div class="reviewer-name">דנה ר., באר שבע</div>
-                <p>"קניתי את הסט המלא וזו הייתה ההשקעה הטובה ביותר שעשיתי! הבגדים נוחים, יפים ועמידים. אחרי 3 חודשים של שימוש יומי הם עדיין כמו חדשים. שווה כל שקל!"</p>
-            </div>
-
-            <div class="review-card">
-                <div class="stars">★★★★★</div>
-                <div class="reviewer-name">ליאת ש., פתח תקווה</div>
-                <p>"המשלוח הגיע תוך יומיים! השירות דרך הוואטסאפ היה מהיר ומקצועי. הטייץ מחמיא ונוח, ובמחיר הזה עם ההנחה זה ממש גניבה. כבר הזמנתי עוד אחד!"</p>
+            <div class="feature-item">
+                <div class="feature-icon">💬</div>
+                <h3>שירות אישי</h3>
+                <p>זמינים בוואטסאפ לכל שאלה</p>
             </div>
         </div>
 
         <div class="contact-section">
-            <h2 class="section-title">צרי קשר</h2>
-            <p style="font-size: 1.3em; margin-bottom: 10px;">יש שאלות? נשמח לעזור!</p>
-            <p style="font-size: 1.1em; margin-bottom: 20px;">זמינים 24/7 לשירותך</p>
+            <h2 class="section-title">יש שאלות? בואי נדבר</h2>
+            <p style="font-size: 1.3em;">זמינים עבורך בכל שעה</p>
             
             <div class="contact-buttons">
                 <button class="contact-btn whatsapp-btn" onclick="openWhatsApp()">
-                    💬 WhatsApp
-                </button>
-                <button class="contact-btn telegram-btn" onclick="openTelegram()">
-                    ✈️ Telegram
+                    שלחי הודעה בוואטסאפ
                 </button>
                 <button class="contact-btn phone-btn" onclick="callUs()">
-                    📞 התקשרי אלינו
+                    התקשרי אלינו
                 </button>
             </div>
 
             <p style="margin-top: 25px; font-size: 1.1em;">
-                📞 טלפון: 03-1234567<br>
-                📧 אימייל: support@flexher.co.il
+                📞 טלפון: 050-XXX-XXXX<br>
+                📧 אימייל: info@flexher.co.il
             </p>
         </div>
     </div>
 
-    <div class="floating-whatsapp" onclick="openWhatsApp()">
-        💬
-    </div>
+    <div class="floating-whatsapp" onclick="openWhatsApp()">💬</div>
 
     <script>
         function orderProduct(productName) {
             const message = `היי! אני מעוניינת להזמין: ${productName}`;
+            // החלף את המספר הזה למספר שלך (ללא אפס בהתחלה)
             window.open(`https://wa.me/972501234567?text=${encodeURIComponent(message)}`, '_blank');
         }
 
         function openWhatsApp() {
-            const message = 'היי! אני מעוניינת לקבל מידע נוסף על המוצרים שלכם';
+            const message = 'היי! אני מעוניינת לקבל מידע נוסף';
+            // החלף את המספר הזה למספר שלך
             window.open(`https://wa.me/972501234567?text=${encodeURIComponent(message)}`, '_blank');
         }
 
-        function openTelegram() {
-            window.open('https://t.me/flexher_support', '_blank');
-        }
-
         function callUs() {
-            window.location.href = 'tel:+97231234567';
+            // החלף למספר שלך
+            window.location.href = 'tel:+972501234567';
         }
-
-        // Animation on scroll
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        });
-
-        document.querySelectorAll('.product-card, .review-card').forEach((el) => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'all 0.5s ease';
-            observer.observe(el);
-        });
     </script>
 </body>
 </html>
