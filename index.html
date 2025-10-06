@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlexHer - ביגוד ספורט פרימיום לנשים | טייץ יוגה איכותי לא שקוף</title>
-    <meta name="description" content="ביגוד ספורט איכותי לנשים. טייץ יוגה עם מותניים גבוהות, בד לא שקוף (Squat Proof). הנחה מיוחדת לחיילות. משלוח חינם בישראל.">
+    <title>FlexHer - טייץ יוגה לא שקוף (Squat Proof) | מותניים גבוהות ונוחות</title>
+    <meta name="description" content="ביגוד ספורט איכותי לנשים. טייץ יוגה עם מותניים גבוהות, בד לא שקוף (Squat Proof) ותחושת 'עירום' (Naked Feel). משלוח חינם בישראל.">
     <style>
+        /* CSS RESET */
         * {
             margin: 0;
             padding: 0;
@@ -13,18 +14,20 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Heebo', Arial, sans-serif;
+            font-family: 'Heebo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
             color: #fff;
             line-height: 1.6;
         }
 
+        /* TOP BANNER */
         .top-banner {
             background: linear-gradient(90deg, #f093fb 0%, #f5576c 100%);
             padding: 12px;
             text-align: center;
             font-weight: bold;
             font-size: 0.95em;
+            animation: pulse 1.5s infinite alternate; 
         }
 
         .container {
@@ -33,6 +36,7 @@
             padding: 20px;
         }
 
+        /* HEADER & LOGO */
         header {
             text-align: center;
             padding: 30px 20px;
@@ -55,6 +59,7 @@
             color: rgba(255, 255, 255, 0.9);
         }
 
+        /* HERO SECTION */
         .hero {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
@@ -67,10 +72,10 @@
         .hero h1 {
             font-size: 2.5em;
             margin-bottom: 20px;
-            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7); /* Added text shadow for contrast */
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
         }
 
-        .hero .cta-button { /* New style for button in hero section */
+        .hero .cta-button { 
             background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
             color: white;
             border: none;
@@ -80,7 +85,7 @@
             cursor: pointer;
             margin-top: 25px;
             transition: all 0.3s ease;
-            display: inline-block; /* Make it block for full width on mobile if needed */
+            display: inline-block;
         }
 
         .hero .cta-button:hover {
@@ -88,7 +93,7 @@
             box-shadow: 0 10px 25px rgba(245, 87, 108, 0.5);
         }
 
-
+        /* DISCOUNT BOXES */
         .discount-boxes {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -102,6 +107,10 @@
             border-radius: 20px;
             text-align: center;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .discount-box:hover {
+            transform: translateY(-5px);
         }
 
         .discount-box h3 {
@@ -115,6 +124,7 @@
             margin: 10px 0;
         }
 
+        /* PRODUCT CARD */
         .products {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -136,22 +146,23 @@
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
         }
 
-        .product-image-container { /* New container for the image */
+        /* IMAGE HANDLING */
+        .product-image-container {
             width: 100%;
-            height: 400px; /* Adjust height as needed */
+            height: 400px; /* גובה קבוע, משמר יחס גובה-רוחב טוב לתמונה */
             overflow: hidden;
             border-radius: 15px;
             margin-bottom: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: rgba(0,0,0,0.1); /* Fallback background */
+            background-color: rgba(0,0,0,0.1);
         }
 
         .product-image-container img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Ensures image covers the container */
+            object-fit: cover;
             display: block;
         }
 
@@ -181,6 +192,7 @@
             margin-left: 10px;
         }
 
+        /* BUY BUTTON */
         .buy-button {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
@@ -195,15 +207,16 @@
         }
 
         .buy-button:hover {
-            transform: scale(1.05);
+            transform: scale(1.05); /* אפקט התנפחות/קפיצה */
             box-shadow: 0 10px 25px rgba(102, 126, 234, 0.5);
         }
 
+        /* GENERAL SECTIONS */
         .section-title {
             text-align: center;
             font-size: 2.5em;
             margin: 60px 0 35px;
-            text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5); /* Added for contrast */
+            text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
         }
 
         .about-brand {
@@ -219,7 +232,8 @@
             margin: 20px 0;
         }
 
-        .social-proof { /* New section for social proof */
+        /* SOCIAL PROOF */
+        .social-proof {
             background: rgba(255, 255, 255, 0.1);
             border-radius: 25px;
             padding: 40px 30px;
@@ -228,7 +242,7 @@
         }
         .social-proof .stars {
             font-size: 2.5em;
-            color: #ffd700; /* Gold color for stars */
+            color: #ffd700;
             margin-bottom: 15px;
         }
         .social-proof p {
@@ -236,6 +250,7 @@
             margin-bottom: 10px;
         }
 
+        /* FEATURES */
         .features {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -249,12 +264,8 @@
             border-radius: 15px;
             text-align: center;
         }
-
-        .feature-icon {
-            font-size: 3em;
-            margin-bottom: 15px;
-        }
-
+        
+        /* CONTACT BUTTONS */
         .contact-section {
             background: rgba(0, 0, 0, 0.3);
             border-radius: 25px;
@@ -292,9 +303,11 @@
         }
 
         .contact-btn:hover {
-            transform: scale(1.05);
+            transform: scale(1.05); /* אפקט התנפחות/קפיצה */
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
         }
 
+        /* FLOATING WHATSAPP BUTTON */
         .floating-whatsapp {
             position: fixed;
             bottom: 30px;
@@ -326,7 +339,14 @@
             font-size: 0.9em;
             margin-bottom: 20px;
         }
+        
+        /* KEYFRAMES for top banner animation */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.02); }
+        }
 
+        /* RESPONSIVE DESIGN */
         @media (max-width: 768px) {
             .logo {
                 font-size: 2em;
@@ -356,7 +376,7 @@
         <div class="hero">
             <div class="new-brand-badge">מותג חדש בישראל</div>
             <h1>הסוף למבוכה: הטייץ הלא-שקוף שמעניק לך ביטחון מלא!</h1>
-            <p style="font-size: 1.3em; margin: 20px 0;">בד 'סקואט פרוף' (Squat Proof) | מותניים גבוהות לתמיכה | ייבוש מהיר</p>
+            <p style="font-size: 1.3em; margin: 20px 0;">בד 'סקואט פרוף' (Squat Proof) | מותניים גבוהות לתמיכה | תחושת "עירום" (Naked Feel)</p>
             <a href="#product-section" class="cta-button">כן! אני רוצה ביטחון ונוחות באימון</a>
         </div>
 
@@ -382,22 +402,22 @@
             </div>
         </div>
 
-        <h2 class="section-title" id="product-section">טייץ היוגה פרימיום של FlexHer</h2>
+        <h2 class="section-title" id="product-section">טייץ היוגה פרימיום של FlexHer: תחושת נוצה!</h2>
         <div class="products">
             <div class="product-card">
                 <div class="product-image-container">
-                    <img src="https://via.placeholder.com/400x400/764ba2/FFFFFF?text=הכנס+תמונת+טייץ+כאן" alt="טייץ יוגה פרימיום FlexHer">
+                    <img src="https://ae01.alicdn.com/kf/S5589ea3c1e1f43ee8e05e1019aff6f36H.jpg?width=1067&height=1600&hash=2667" alt="טייץ יוגה אדום מותניים גבוהות FlexHer">
                 </div>
                 <h3>טייץ יוגה פרימיום - FlexHer</h3>
-                <p>הטייץ שישנה לך את חווית האימון! עיצוב מושלם, נוחות מקסימלית וביטחון בלתי מתפשר.</p>
+                <p>הטייץ שישנה לך את חווית האימון! עיצוב מושלם, נוחות מקסימלית ותחושה קלילה כמו נוצה (<strong style="color: #4facfe;">Naked Feel</strong>). ביטחון בלתי מתפשר.</p>
                 
                 <div class="product-specs">
                     <strong>למה תתאהבי בטייץ של FlexHer?</strong><br>
+                    •   **בד "תחושת עירום" (Naked Feel):** קל משקל, נושם ורך במיוחד.<br>
                     •   **בד לא שקוף לחלוטין (Squat Proof):** עכשיו את יכולה להתאמן בראש שקט.<br>
                     •   **מותניים גבוהות ומחמיאות:** תמיכה מושלמת ואפקט חיטוב טבעי.<br>
                     •   **טכנולוגיית ייבוש מהיר:** נשארת יבשה ורעננה, גם באימונים אינטנסיביים.<br>
                     •   **בד גמיש ונושם:** 80% פוליאסטר + 20% ספנדקס לנוחות מקסימלית.<br>
-                    •   **זמין במגוון צבעים:** בחרי את הגוון המושלם עבורך.<br>
                     •   **מידות: S-XL**
                 </div>
 
@@ -442,8 +462,8 @@
 
             <div class="feature-item">
                 <div class="feature-icon">🚚</div>
-                <h3>משלוח חינם</h3>
-                <p>משלוח מהיר לכל הארץ ללא עלות!</p>
+                <h3>משלוח חינם לכל הארץ</h3>
+                <p>משלוח חינם! **זמן אספקה משוער: 14-25 ימי עסקים**. שקיפות מלאה.</p>
             </div>
 
             <div class="feature-item">
@@ -484,7 +504,7 @@
     <script>
         function orderProduct(productName) {
             const message = `היי FlexHer! אני מעוניינת להזמין את ${productName}. אשמח לקבל פרטים נוספים על איך לבצע את ההזמנה.`;
-            // החלף את המספר הזה למספר שלך (ללא אפס בהתחלה, לדוגמה 972501234567)
+            // החלף את המספר הזה למספר שלך (לדוגמה 972501234567)
             window.open(`https://wa.me/972501234567?text=${encodeURIComponent(message)}`, '_blank');
         }
 
